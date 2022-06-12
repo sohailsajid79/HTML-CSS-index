@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTLM & CSS Cheatsheet</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 id="title">HTML & CSS</h1>
+        <nav>
+            <a href="#HTML-Overview">HTML Webpage Skeleton</a>
+             <a href="#CSS-Overview">CSS - Webpage Presentation</a>
+        </nav>
+    </header>
+
+    <main>
+<!-- HTML Overview -->
+        <h1 id="HTML-Overview">HTML Overview</h1>
+        <h2>Getting Started</h2>
+        <p>HTML stands for <span>H</span>yper<span>T</span>ext <span>M</span>arkup <span>L</span>anguage and 
+        is used to create the structure and content of a webpage. Most HTML <strong>elements</strong> contain 
+        opening and closing tags with raw text or other HTML tags between them.</p>
+
+        <img src="./element.png" width="500" height="250" alt="html element" class="center">
+
+    <table>
+        <thead>
+            <th>Tags</th>
+            <th>Description</th>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <!-- html -->
+                <td>&lt;html&gt; &lt;/html&gt;</td>
+                <td>All html code is nested in &lt;html&gt; and ends with &lt;/html&gt;
+            </tr>
+            <tr>
+                <!-- head -->
+                <td>&lt;head&gt; &lt;/head&gt;</td>
+                <td>Contains the meta (self-closing tag), the broswer title element
+                &lt;title&gt; &lt;/title&gt; and links to external stylesheets.
+            </tr>
+            <tr>
+                <!-- body -->
+                <td>&lt;body&gt; &lt;/body&gt;</td>
+                <td>All visible content will be displayed inside the body element.</td>
+            </tr>
+            <tr>
+                <!-- h1-h6 -->
+                <td>&lt;h1&gt; &lt;/h1&gt;...</td>
+                <td>Headings and sub-headings range from &lt;h1&gt; to &lt;/h6&gt;, and 
+                are used to provide titles for sections of content.
+            </tr>
+            <tr>
+                <!-- p -->
+                <td>&lt;p&gt; &lt;/p&gt;</td>
+                <td>The &lt;p&gt; element defines a paragraph and always starts on a new line.</td>
+            </tr>
+            <tr>
+                <!-- span -->
+                <td>&lt;span&gt; &lt;/span&gt;</td>
+                <td>The &lt;span&gt; element is an inline container and can be used to
+                group text for styling purposes <span>like this!</span></td>
+            </tr>
+            <tr>
+                <!-- div -->
+                <td>&lt;div&gt; &lt;/div&gt;</td>
+                <td>The &lt;div&gt; tag is used as a container for HTML elements - which is then 
+                styled with CSS.</td>
+            </tr>
+            <tr>
+                <!-- em -->
+                <td>&lt;em&gt; &lt;em&gt;
+                or
+                <br>
+                <!-- strong -->
+                &lt;strong&gt; &lt;strong&gt;</td>
+                <td>These tags are used to emphasise text where &lt;em&gt; will <em>italicise</em>
+                and &lt;strong&gt; will highlight the text as <strong>bold.</strong></td>
+            </tr>
+            <tr>
+                <!-- comments -->
+                <td>&lt;!-- --&gt;</td>
+                <td>The comment tag is used to insert comments in the HTML source code.
+                Comments are not displayed in the browsers.</td>
+            </tr>
+            <tr>
+                <!-- br -->
+                <td>&lt;br&gt;</td>
+                <td>&lt;br&gt; is a self-closing tag and it inserts a single line break</td>
+            </tr>
+            <tr>
+                <!-- hr -->
+                <td>&lt;hr&gt;</td>
+                <td>&lt;hr&gt; Another self-closing tag and is used to define thematic changes in the content and is displayed
+                as a horizontal rule. As seen below.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div id="HTML tag">
+    <p>Click <a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">here</a>
+    for more HTML tag references<hr></p>
+    </div>
+
+<!-- Semantic Section -->
+
+    <section id="section">
+        <h2>Semantic</h2>
+        <p>These elements clearly describes its meaning to both the browser and the developer,
+        and define different parts of the web page.</p>
+        <img src="./img_sem_elements.gif" class="floatright">
+        
+        <table>
+            <thead>
+                <th>Tags</th>
+                <th>Description</th>
+            </thead>
+        <tbody>
+            <tr> <!-- header -->
+                <td>&lt;header&gt; &lt;/header&gt;</td>
+                <td>The header represents a container for introductory content.</td>
+            </tr>
+            <tr> <!-- <nav> -->
+                <td>&lt;nav&gt; &lt;/nav&gt;</td>
+                <td>The nav tag defines a set of navigation links.</td>
+            </tr>
+            <tr> <!-- main -->
+                <td>&lt;main&gt; &lt;/main&gt;</td>
+                <td>This tag specifies the main content of the webpage.</td>
+            </tr>
+            <tr> <!-- section -->
+                <td>&lt;section&gt; &lt;/section&gt;</td>
+                <td>The tag defines a section on the webpage.</td>
+            </tr>
+            <tr> <!-- article -->
+                <td>&lt;article&gt; &lt;/article&gt;</td>
+                <td>The tag specifies independent, self-contained content.</td>
+            </tr>
+            <tr> <!-- aside -->
+                <td>&lt;aside&gt; &lt;/aside&gt;</td>
+                <td>The aside content is often placed as a sidebar on the webpage.</td>
+            </tr>
+            <tr> <!-- footer -->
+                <td>&lt;footer&gt; &lt;/footer&gt;</td>
+                <td>The tag defines a footer for the webpage and typically contains:
+                <ul>
+                    <li>Author's information</li>
+                    <li>Copyright information</li>
+                    <li>Back to top links</li>
+                    <li>Related webpages</li>
+                </ul></td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+<!-- Attributes Section -->
+    
+    <h2>Attributes</h2>
+    <p>All HTML elements can have attributes and they provide additional information about the
+    elements</p>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- a -->
+                <td>&lt;a&gt; &lt;/a&gt;</td>
+                <td>The href attribute requires a URL to create the hyperlink and the target value
+                "_blank" tells the browser to open the hyperlink in a new tab</td>
+            </tr>
+            <tr>
+                <!-- img -->
+                <td>&lt;img&gt;</td>
+                <td>The image tag can take the following attributes src="", alt="", width="",
+                height="" and style="". The src can either be url or "./pathway/folder/to_image"</td>
+            </tr>
+            <tr>
+                <!-- link -->
+                <td>&lt;link&gt;</td>
+                <td>Creates a connection to the external stylesheet using rel="stylesheet" href="filename.css"</td>  
+            </tr>
+            <tr>
+                <!-- img -->
+                <td>&lt;a&gt;</td>
+                <td>The href attribute of the anchor tag creates a hyperlink that can 
+                point to external webpages, files on the same server or another section
+                of the webpage.</td>
+            </tr>
+        <tbody>
+    </table>
+
+<!-- CSS Overview -->
+
+    <h1 id="CSS-Overview">CSS Overview</h1>
+    <h2>Getting Started</h2>
+    <p>Cascading Style Sheets (CSS) is the language used to style an HTML webpage and describes 
+    how HTML elements should be displayed. CSS rule consists of a selector and a declaration
+    block.</p>
+    
+
+
+<!-- Selector Types Section -->
+
+    <h2>CSS Selector Types</h2>
+        <table>
+            <thead>
+                <th>Attributes</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Universal -->
+                    <td>Universal Selector</td>
+                    <td>* {} will target all the elements on the webpage</td>
+                </tr>
+                <tr>
+                    <!-- Type -->
+                    <td>Type Selector</td>
+                    <td>Selects by the tag name h1, h2, h3 {}</tr>
+                <tr>
+                    <!-- Class -->
+                    <td>class</td>
+                    <td>.class {} selector selects elements with a specific class attribute</td>
+                    
+                </tr>
+                <tr>
+                    <!-- ID -->
+                    <td>id</td>
+                    <td>#id {} selector styles the element with the specified id</td>
+                </tr>
+            <tbody>
+        </table>
+
+<!-- CSS Text Properties -->
+
+    <h2>CSS Properties</h2>
+    <table>
+        <thead>
+            <th>Properties</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- font-family -->
+                <td>font-family {}</td>
+                <td>The property specifies the font for an element</td>
+            </tr>
+            <tr>
+                <!-- font-size -->
+                <td>font-size {}</td>
+                <td>Sets the size of a font</tr>
+            <tr>
+                <!-- font-weight -->
+                <td>font-weight {}</td>
+                <td>Sets how thick or thin characters in text should be displayed</td> 
+            </tr>
+            <tr>
+                <!-- font-style -->
+                <td>font-style {}</td>
+                <td>Specifies the font style for a text</td>
+            </tr>
+            <tr>
+                <!-- text-transform -->
+                <td>text-transform {}</td>
+                <td>Controls the capitalisation of text. Some of the values include uppercase; lowercase;</td>
+            </tr>
+            <tr>
+                <!-- text-decoration -->
+                <td>text-decoration {}</td>
+                <td>Decorations are added to text, and is a shorthand property for:
+                    <ul>
+                        <li>text-decoration-line:</li>
+                        <li>text-decoration-color:</li>
+                        <li>text-decoration-style:</li>
+                        <li>text-decoration-thickness:</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <!-- line-height -->
+                <td>line-height {}</td>
+                <td>Specifies the height of a line</td>
+            </tr>
+            <tr>
+                <!-- letter-spacing -->
+                <td>letter-spacing {}</td>
+                <td>Increases or decreases the space between characters in a text</td>
+            </tr>
+            <tr>
+                <!-- word-spacing -->
+                <td>word-spacing {}</td>
+                <td>Increases or decreases the white space between words</td>
+            </tr>
+            <tr>
+                <!-- text-align -->
+                <td>text-align {}</td>
+                <td>Specifies the horizontal alignment of text in an element</td>
+            </tr>
+            <tr>
+                <!-- vertical-align -->
+                <td>vertical-align {}</td>
+                <td>Sets the vertical alignment of an element</td>
+            </tr>
+        <tbody>
+    </table>
+
+    <p>Click <a href="https://www.w3schools.com/css/default.asp" target="_blank">here</a>
+    for more CSS<hr></p>
+    </main>
+    <footer>
+        <a href="#title">Back to top</a> 
+    </footer>
+</body>
+</html>
